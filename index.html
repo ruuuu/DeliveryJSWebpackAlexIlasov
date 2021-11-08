@@ -7,9 +7,11 @@
     <title>Delivery Food - бесплатная доставка еды на дом</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap&subset=cyrillic"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <script src="js/wow.min.js" defer></script> -->
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js" defer></script>  подключить дял верси без вебпака-->
     <script src="./dist/main.js" defer></script>
     <!--после сборки  вебпаком подключли только этот полученный файл-->
 
@@ -51,13 +53,33 @@
 
     <main class="main">
         <div class="container">
-            <section class="container-promo">
-                <section class="promo">
-                    <h1 class="promo-title">Онлайн-сервис<br> доставки еды на дом</h1>
-                    <p class="promo-text">
-                        Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
-                    </p>
-                </section>
+            <section class="container-promo swiper">
+                <div class="swiper-wrapper">
+                    <section class="promo pizza swiper-slide">
+                        <h1 class="promo-title">Онлайн-сервис<br> доставки еды на дом</h1>
+                        <p class="promo-text">
+                            Блюда из любимого ресторана привезет курьер в перчатках, маске и с антисептиком
+                        </p>
+                    </section>
+
+                    <section class="promo kebab swiper-slide">
+                        <h1 class="promo-title">шашлыки на майские<br> со скидкой 35</h1>
+                        <p class="promo-text">
+                            закажите шаглыки в любом ресторане
+                        </p>
+                    </section>
+
+                    <section class="promo vegetables swiper-slide">
+                        <h1 class="promo-title">скидка 25 на всю еду</h1>
+                        <p class="promo-text">
+                            Блюда из ресторана приаезут вместе с двумя подарочными
+                        </p>
+                    </section>
+                    <div class="swiper-button-prev"></div>
+                    <!--стрелк  дял слайда-->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </section>
 
             <section class="restaraunts">
