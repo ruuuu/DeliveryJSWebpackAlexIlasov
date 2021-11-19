@@ -13,7 +13,7 @@ const slider = () => {
         centeredSlides: true,
         autoplay: {
             delay: 2500,
-            disableOnInteraction: false,
+            disableOnInteraction: false
         },
 
 
@@ -38,5 +38,5 @@ const slider = () => {
 export default slider
 
 //  переходим на swiper.js -> Get started -> набираем в консоли команлу npm install swiper
-// вставляем в index.html копированный ур к min css
+// вставляем в index.html копированный урл к файлу mincss
 // https://swiperjs.com/demos https://codesandbox.io/s/d4vlk?file=/index.html

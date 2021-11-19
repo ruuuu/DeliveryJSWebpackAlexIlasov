@@ -1,7 +1,7 @@
 const auth = () => {
 
     // элементы на странице это тоже объекты
-    // 
+
     const buttonAuth = document.querySelector('.buttun-auth'); // кнпока Войти, querySelector получает NodeList, а метод getElementById/ getElementByClassName получает коллекцию
     const buttonOut = document.querySelector('.button-out'); // кнопка Выйти
     const modalAuth = document.querySelector('.modal-auth'); // мод окно авторизации
@@ -19,8 +19,6 @@ const auth = () => {
         userName.textContent = user.login;
         modalAuth.style.display = 'none';
         console.log('userName.textContent', userName.textContent);
-
-
     }
 
 
@@ -38,7 +36,6 @@ const auth = () => {
 
     buttonAuth.addEventListener('click', () => { //addEventListener - метод(слушаетль на ёлементе, он ожидает когда нажмут на кнопку), на кнпоку buttonAuth повеисли событие клика, после клика выполнится функция котрую передаем
         modalAuth.style.display = 'flex'; // elem.style.навание сво-тва = значение свойства
-        console.dir(modalAuth);
     });
 
 
@@ -55,8 +52,7 @@ const auth = () => {
     // у формы есть событие submit, это событие отправки формы:
     logInForm.addEventListener('submit', (evt) => { // evt-  объект события
         evt.preventDefault(); // отменяет действие по умолчнаию, это после отправки формы станица перезагружается
-        // console.dir(event);
-        // console.dir(inputLogin);
+
         const user = {
             login: inputLogin.value,
             password: inputPassword.value
